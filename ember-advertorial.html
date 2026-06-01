@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+
+<!--
+╔══════════════════════════════════════════════════════════════╗
+║  EMBER ADVERTORIAL — IMAGE LINKS                             ║
+║  Paste the URL for each image between the single quotes.     ║
+║  Leave blank to keep the current placeholder / filename.     ║
+╚══════════════════════════════════════════════════════════════╝
+-->
+<script>
+var EMBER_IMAGES = {
+
+  // ── AUTHOR ──────────────────────────────────────────────────
+  portrait:  'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/Lauren.png?v=1780343596',   // Lauren M. — circle headshot in the byline
+
+  // ── STORY IMAGES ────────────────────────────────────────────
+  A: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/A.png?v=1780343596',   // Hero photo — Lauren at her desk
+  B: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/B.png?v=1780343596',   // Boardroom presentation scene
+  C: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/C.png?v=1780343596',   // Parking garage after the blank
+  D: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/D.png?v=1780340502',   // 3 AM insomnia, phone glow
+  E: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/E.png?v=1780340504',   // The cheat-sheet notebook
+  F: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/F.png?v=1780340503',   // Woman researching at laptop
+  G: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/G.png?v=1780340502',   // Doctor visit — "probably just stress"
+  H: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/H.png?v=1780340503',   // Row of supplements + cancellation email
+
+  // ── SCIENCE DIAGRAMS ────────────────────────────────────────
+  I: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/I.png?v=1780340504',   // Dimmer switch — estrogen / CD38 explainer
+  J: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/J.png?v=1780340503',   // Bucket — NMN fills, CD38 drains
+
+  // ── STATS + SOCIAL PROOF ────────────────────────────────────
+  K: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/K.png?v=1780340501',   // 64% stat card
+  N: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/N.png?v=1780340502',   // Christine H. testimonial card
+
+  // ── RESULTS ─────────────────────────────────────────────────
+  L: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/L.png?v=1780340503',   // Sleeping through — clock reads 6:54
+  M: 'https://cdn.shopify.com/s/files/1/1031/5336/9430/files/M.png?v=1780340503',   // Colleague conversation
+
+};
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<title>I Was The Sharpest Person In Every Room I Walked Into — Ember</title>
+<style>
+
+:root {
+  --plum: #5C4F7C;
+  --mauve: #B89CC0;
+  --deep-plum: #3D3254;
+  --plum-faint: #F0EDF8;
+  --teal: #2A6B68;
+  --slate: #7A8FA8;
+  --ivory: #FAF8F4;
+  --charcoal: #1A1A20;
+  --mid-ink: #4A4A55;
+  --muted: #8A8A9A;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* ── SPONSORED LABEL ── */
+.sponsored-bar {
+  background: var(--ivory);
+  border-bottom: 1px solid rgba(92,79,124,0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.sp-left  { font-weight:500; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); }
+.sp-category { font-weight:500; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--teal); }
+
+/* ── ARTICLE HERO ── */
+.article-hero {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 32px;
+}
+.article-meta { display:flex; align-items:center; gap:10px; margin-bottom:22px; flex-wrap:wrap; }
+.meta-tag  { font-weight:500; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--teal); }
+.meta-dot  { color:var(--muted); font-size:12px; }
+.meta-date, .meta-read { font-weight:300; font-size:12px; color:var(--muted); }
+
+.article-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-size: clamp(28px, 7.5vw, 52px);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  color: var(--charcoal);
+  margin-bottom: 20px;
+}
+.article-headline em  { font-style:italic; color:var(--plum); }
+.article-headline br  { display:none; }
+
+.article-deck {
+  font-weight: 300;
+  font-size: clamp(15px, 3.8vw, 18px);
+  line-height: 1.75;
+  color: var(--mid-ink);
+  margin-bottom: 28px;
+}
+.article-deck strong { font-weight:500; color:var(--charcoal); }
+
+/* ── AUTHOR ROW ── */
+.author-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(92,79,124,0.1);
+}
+
+/* ── AUTHOR AVATAR CIRCLE ── */
+.author-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--plum-faint);
+  border: 2px solid rgba(92,79,124,0.2);
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Portrait photo — fills the circle when URL is present */
+.author-avatar .avatar-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: none;          /* shown by JS once URL is set */
+  border-radius: 50%;
+}
+/* Emoji fallback — hidden by JS once real photo is loaded */
+.author-avatar .avatar-emoji {
+  font-size: 22px;
+  line-height: 1;
+  user-select: none;
+}
+
+.author-name-sm  { font-weight:500; font-size:13px; color:var(--charcoal); letter-spacing:.01em; }
+.author-role-sm  { font-weight:300; font-size:11px; color:var(--muted); margin-top:2px; line-height:1.5; }
+
+/* ── HERO IMAGE ── */
+.hero-image-wrap { max-width:720px; margin:0 auto; overflow:hidden; }
+.hero-photo-img  {
+  width:100%; display:block; height:auto;
+  max-height:560px; object-fit:cover; object-position:center 20%;
+}
+.hero-caption {
+  font-weight:300; font-size:11px; color:var(--muted);
+  text-align:center; padding:9px 20px 0;
+  letter-spacing:.03em; font-style:italic;
+  max-width:720px; margin:0 auto;
+}
+
+/* ── ARTICLE DIVIDER ── */
+.art-rule { max-width:720px; margin:0 auto; padding:28px 20px 0; }
+.art-rule hr { border:none; border-top:1px solid rgba(92,79,124,0.12); }
+
+/* ── BODY CONTENT ── */
+.article-body { max-width:680px; margin:0 auto; padding:36px 20px; }
+
+/* ── SECTION BREAK ── */
+.section-break { display:flex; align-items:center; gap:12px; margin:44px 0 36px; }
+.sb-rule  { flex:1; height:1px; background:rgba(92,79,124,0.1); min-width:12px; }
+.sb-label { font-weight:500; font-size:9px; letter-spacing:.17em; text-transform:uppercase; color:var(--muted); white-space:nowrap; flex-shrink:1; }
+
+/* ── SECTION HEADLINE ── */
+h2.sec-h2 {
+  font-family:'Cormorant Garamond',serif; font-weight:300;
+  font-size:clamp(22px,5.8vw,38px); line-height:1.24;
+  letter-spacing:-0.02em; color:var(--charcoal); margin-bottom:22px;
+}
+h2.sec-h2 em       { font-style:italic; color:var(--plum); }
+h2.sec-h2-white    { color:#fff; }
+h2.sec-h2-white em { color:var(--mauve); }
+h2.sec-h2 br, h2.sec-h2-white br { display:none; }
+
+/* ── BODY PARAGRAPHS ── */
+p.p {
+  font-weight:300; font-size:clamp(15px,3.5vw,17px);
+  line-height:1.9; color:var(--charcoal); margin-bottom:20px;
+}
+p.p-white {
+  font-weight:300; font-size:clamp(15px,3.5vw,17px);
+  line-height:1.9; color:rgba(255,255,255,0.78); margin-bottom:20px;
+}
+p.p strong        { font-weight:500; color:var(--charcoal); }
+p.p-white strong  { font-weight:500; color:#fff; }
+p.p em { font-family:'Cormorant Garamond',serif; font-style:italic; font-size:1.1em; color:var(--plum); }
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  margin:32px 0; padding:24px 0;
+  border-top:1px solid rgba(92,79,124,0.14);
+  border-bottom:1px solid rgba(92,79,124,0.14);
+  text-align:center;
+}
+.pull-quote p {
+  font-family:'Cormorant Garamond',serif; font-weight:300;
+  font-style:italic; font-size:clamp(19px,4.8vw,26px);
+  line-height:1.55; color:var(--plum);
+}
+
+/* ── CALLOUT BOX ── */
+.callout { border-left:3px solid var(--plum); background:var(--plum-faint); padding:20px; margin:24px 0; }
+.callout p { font-weight:300; font-size:clamp(14px,3.5vw,15px); line-height:1.8; color:var(--mid-ink); margin:0; }
+.callout p strong { font-weight:500; color:var(--plum); }
+
+/* ── DARK SECTION ── */
+.dark-section { background:var(--deep-plum); padding:56px 20px; }
+.dark-inner   { max-width:680px; margin:0 auto; }
+
+/* ── FAILED LIST ── */
+.failed-list { list-style:none; margin:20px 0 28px; }
+.failed-item {
+  display:flex; align-items:flex-start; gap:12px;
+  padding:12px 0; border-bottom:1px solid rgba(92,79,124,0.07);
+  font-weight:300; font-size:clamp(14px,3.2vw,16px);
+  line-height:1.65; color:var(--mid-ink);
+}
+.failed-item:last-child { border-bottom:none; }
+.fx { color:#9E3A3A; font-size:11px; flex-shrink:0; margin-top:4px; font-weight:500; }
+.failed-item strong { font-weight:500; color:var(--charcoal); }
+
+/* ── SCIENCE TEAL BOX (dark) ── */
+.sci-box-dark { border-left:2px solid var(--teal); background:rgba(42,107,104,0.1); padding:18px 20px; margin:24px 0; }
+.sci-box-label {
+  font-weight:500; font-size:9px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--teal);
+  margin-bottom:10px; display:flex; align-items:center; gap:8px;
+}
+.sci-box-body { font-weight:300; font-size:14px; line-height:1.82; color:rgba(255,255,255,0.65); }
+.sci-box-body strong { font-weight:500; color:rgba(255,255,255,0.85); }
+
+/* ── RESULT ROWS ── */
+.result-row { padding:22px 0; border-bottom:1px solid rgba(92,79,124,0.08); }
+.result-row:last-of-type { border-bottom:none; }
+.result-tag {
+  font-weight:500; font-size:9px; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:10px;
+  display:flex; align-items:center; gap:12px;
+}
+.result-tag::after { content:''; flex:1; height:1px; background:rgba(92,79,124,0.1); }
+.result-heading {
+  font-family:'Cormorant Garamond',serif; font-weight:300;
+  font-size:clamp(18px,4.5vw,22px); color:var(--plum);
+  line-height:1.3; margin-bottom:12px; letter-spacing:-.01em;
+}
+
+/* ── CTA SECTION ── */
+.cta-section { background:var(--deep-plum); padding:60px 20px; text-align:center; }
+.cta-inner   { max-width:580px; margin:0 auto; }
+.cta-label   { font-weight:500; font-size:9px; letter-spacing:.2em; text-transform:uppercase; color:var(--mauve); opacity:.8; margin-bottom:20px; display:block; }
+.cta-h       { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(24px,6.5vw,42px); line-height:1.22; letter-spacing:-.022em; color:#fff; margin-bottom:20px; }
+.cta-h em    { font-style:italic; color:var(--mauve); }
+.cta-h br    { display:none; }
+.cta-body    { font-weight:300; font-size:clamp(14px,3.5vw,15.5px); line-height:1.85; color:rgba(255,255,255,0.66); margin-bottom:32px; }
+.cta-btn {
+  display:flex; width:100%; background:var(--plum); color:#fff;
+  font-weight:500; font-size:11px; letter-spacing:.12em;
+  text-transform:uppercase; text-decoration:none;
+  padding:20px 24px; border-radius:3px; transition:background 0.2s;
+  line-height:1; min-height:56px; align-items:center; justify-content:center;
+  -webkit-tap-highlight-color:rgba(92,79,124,0.25);
+}
+.cta-btn:hover, .cta-btn:active { background:#4A3D6A; }
+.cta-sub      { font-weight:300; font-size:11px; color:rgba(255,255,255,0.3); letter-spacing:.06em; margin-top:16px; }
+.cta-divider  { border:none; border-top:1px solid rgba(255,255,255,0.08); margin:44px 0 32px; }
+.cta-closing  { font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:clamp(16px,4.5vw,21px); line-height:1.65; color:rgba(255,255,255,0.5); margin-bottom:28px; }
+.cta-wordmark { font-family:'Cormorant Garamond',serif; font-weight:300; font-style:italic; font-size:26px; color:var(--mauve); }
+
+/* ── DISCLAIMER ── */
+.disclaimer { background:var(--ivory); padding:36px 20px; max-width:680px; margin:0 auto; }
+.disclaimer p { font-weight:300; font-size:10.5px; line-height:1.78; color:var(--muted); margin-bottom:10px; }
+
+/* ── FADE-IN ── */
+.fi { opacity:0; transform:translateY(14px); transition:opacity .65s ease,transform .65s ease; }
+.fi.vis { opacity:1; transform:translateY(0); }
+
+/* ══════════════════════════════════════════
+   IMAGE LAYOUT UTILITIES
+   ══════════════════════════════════════════ */
+
+/* Full-bleed — breaks out of article-body padding */
+.img-breakout         { margin:28px -20px; overflow:hidden; }
+.img-breakout img     { width:100%; height:auto; display:block; }
+.img-caption-below    { font-weight:300; font-size:11px; color:var(--muted); font-style:italic; padding:9px 20px 0; letter-spacing:.025em; text-align:center; }
+
+/* Centered card — portrait or illustration */
+.img-card-wrap        { margin:28px auto; text-align:center; }
+.img-card             { width:100%; max-width:400px; height:auto; display:inline-block; }
+.img-card-portrait    { width:100%; max-width:360px; max-height:480px; object-fit:cover; object-position:center top; display:inline-block; }
+
+/* Dark-section centered card */
+.img-dark-card-wrap   { margin:32px 0; text-align:center; }
+.img-dark-card        { width:100%; max-width:480px; height:auto; display:inline-block; border-radius:6px; }
+
+/* Small italic caption under a card */
+.img-note             { font-weight:300; font-size:11px; color:var(--muted); font-style:italic; text-align:center; padding:8px 0 0; letter-spacing:.025em; }
+
+/* ── DESKTOP ENHANCEMENTS ── */
+@media (min-width:500px) {
+  .article-headline br,
+  h2.sec-h2 br, h2.sec-h2-white br,
+  .cta-h br { display:block; }
+}
+@media (min-width:700px) {
+  .article-hero      { padding:64px 48px 48px; }
+  .hero-caption      { padding:10px 48px 0; }
+  .art-rule          { padding:36px 48px 0; }
+  .article-body      { padding:48px 48px; }
+  .dark-section      { padding:80px 48px; }
+  .cta-section       { padding:88px 48px; }
+  .disclaimer        { padding:48px 48px; }
+  .img-breakout      { margin-left:-48px; margin-right:-48px; }
+  .img-caption-below { padding-left:0; padding-right:0; }
+  .author-avatar     { width:58px; height:58px; }
+}
+@media (max-width:360px) {
+  .article-hero  { padding:32px 16px 24px; }
+  .article-body  { padding:28px 16px; }
+  .dark-section  { padding:44px 16px; }
+  .cta-section   { padding:48px 16px; }
+  .img-breakout  { margin-left:-16px; margin-right:-16px; }
+  .sb-label      { letter-spacing:.1em; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- SPONSORED LABEL -->
+<div class="sponsored-bar">
+  <span class="sp-left">Sponsored Story</span>
+  <span class="sp-category">Women's Health</span>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- ARTICLE HERO                                -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="article-hero fi">
+  <div class="article-meta">
+    <span class="meta-tag">Brain Health</span>
+    <span class="meta-dot">·</span>
+    <span class="meta-date">June 2026</span>
+    <span class="meta-dot">·</span>
+    <span class="meta-read">7 min read</span>
+  </div>
+
+  <h1 class="article-headline">
+    I Was The Sharpest Person In Every Room I Walked Into.<br>
+    <em>Then Perimenopause Started Stealing My Brain</em><br>
+    But Every Test Came Back Normal.
+  </h1>
+
+  <p class="article-deck">
+    I spent eight months and hundreds of dollars trying to fix something two doctors insisted
+    wasn't broken. <strong>Here's the biological explanation they never looked for, and what finally worked.</strong>
+  </p>
+
+  <!-- AUTHOR ROW — portrait circle sits here -->
+  <div class="author-row">
+    <div class="author-avatar">
+      <img class="avatar-photo" id="avatar-photo" alt="Lauren M.">
+      <span class="avatar-emoji" id="avatar-emoji">👤</span>
+    </div>
+    <div>
+      <div class="author-name-sm">Lauren M.</div>
+      <div class="author-role-sm">Senior Director of Strategy · 23 years in consulting</div>
+    </div>
+  </div>
+</div>
+
+<!-- HERO IMAGE — A -->
+<div class="hero-image-wrap">
+  <img data-img="A" src="A.png" alt="Lauren at her home office, contemplative" class="hero-photo-img">
+</div>
+<p class="hero-caption">Lauren at her home office — where she does her best thinking. Most of the time.</p>
+
+<div class="art-rule"><hr></div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- THE STORY BEGINS                            -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="article-body">
+
+  <p class="p fi">I have been in strategy consulting for 23 years. I've built my entire career on one thing: <strong>my mind.</strong> Not my credentials. Not my network. My ability to walk into any room, hold every detail, and think three moves ahead while everyone else was still catching up.</p>
+
+  <p class="p fi">That was my edge. That was <em>me.</em></p>
+
+  <!-- B — Boardroom -->
+  <div class="img-breakout fi">
+    <img data-img="B" src="B.png" alt="Lauren commanding a boardroom presentation">
+  </div>
+
+  <p class="p fi">And then one day at 46, right in the middle of a presentation I had prepared for weeks, I reached for a word I have used hundreds of times in my career and it simply wasn't there.</p>
+
+  <p class="p fi">The word was <strong>acquisition.</strong></p>
+
+  <p class="p fi">I stood in front of twelve senior stakeholders — including three client executives — searching for it. It came back after what felt like a full minute but was probably closer to ten seconds. I smiled like nothing had happened. I kept moving.</p>
+
+  <p class="p fi">I sat in my car in the parking garage for <strong>twenty-two minutes</strong> afterward.</p>
+
+  <!-- C — Parking garage -->
+  <div class="img-breakout fi">
+    <img data-img="C" src="C.png" alt="Sitting alone and still in the parking garage">
+    <p class="img-caption-below">Twenty-two minutes. Asking herself a question she wasn't ready to answer.</p>
+  </div>
+
+  <div class="pull-quote fi">
+    <p>Is this the beginning of something I can't come back from?</p>
+  </div>
+
+  <!-- IT GOT WORSE -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">It Got Worse</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <p class="p fi">I told myself it was the travel. Two cities in four days. Anyone would blank. Except it happened again.</p>
+
+  <p class="p fi">There was the team meeting where I introduced a colleague I've worked alongside for three years and went completely blank on her last name. In front of her. In front of the whole room. Her name is Patterson. <strong>I've known it for years.</strong> In that moment it was simply gone.</p>
+
+  <p class="p fi">There was the 2 PM wall — every single afternoon — where something in my brain just stops. Not tiredness. More like someone reaches into your chest and unplugs a cable. You're sitting at your desk watching words stop connecting into meaning.</p>
+
+  <p class="p fi">And then there were the 3 AM wake-ups. <strong>No sound. No hot flash. Just fully awake</strong>, lying there until almost 5, my brain solving problems nobody asked it to solve.</p>
+
+  <!-- D — 3 AM insomnia -->
+  <div class="img-card-wrap fi">
+    <img data-img="D" src="D.png" alt="Wide awake at 3:04 AM, phone screen casting cold blue light" class="img-card-portrait">
+  </div>
+
+  <p class="p fi">I started keeping a cheat sheet in my notebook. Words. Names. Key points I needed to make in meetings. Things I had always just <em>known</em> — now written in pencil because I couldn't trust myself to find them when I needed them.</p>
+
+  <!-- E — Cheat sheet notebook -->
+  <div class="img-card-wrap fi">
+    <img data-img="E" src="E.png" alt="Q2 priorities cheat-sheet notebook, April 7th" class="img-card">
+    <p class="img-note">The cheat sheet. April 7th.</p>
+  </div>
+
+  <!-- THE DEAD END -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">The Dead End</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <h2 class="sec-h2 fi">I went to my doctor.<br><em>Everything came back normal.</em></h2>
+
+  <p class="p fi">I described exactly what was happening. She ran a full panel. Standard bloodwork.</p>
+
+  <!-- G — Doctor visit (has quote overlay built into image) -->
+  <div class="img-breakout fi">
+    <img data-img="G" src="G.png" alt="Doctor visit — 'You're healthy. This is probably just stress.'">
+  </div>
+
+  <p class="p fi">Three months later. Different doctor. Same tests. Normal. <em>"You might be entering perimenopause. Have you considered HRT?"</em></p>
+
+  <p class="p fi">I tried HRT. The night sweats improved. My mood evened out. But <strong>the fog didn't lift.</strong> The words still disappeared. The 2 PM crash still came. I was still waking up at 3 AM. I was still keeping the cheat sheet.</p>
+
+  <p class="p fi">I had done everything right. Two clean blood panels. And still losing the one thing I could not afford to lose — with nobody able to tell me why.</p>
+
+  <!-- F — Researching at laptop -->
+  <div class="img-breakout fi">
+    <img data-img="F" src="F.png" alt="Hours of online research, trying to find an explanation nobody gave her">
+    <p class="img-caption-below">Two clean panels. Every test normal. And still not herself.</p>
+  </div>
+
+  <!-- EIGHT MONTHS OF TRYING -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">Eight Months of Trying</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <h2 class="sec-h2 fi">So I started trying<br><em>everything else.</em></h2>
+
+  <p class="p fi">Because that's what you do when the medical system tells you you're fine but nothing is fine. You research. You try things. You spend money. You hope.</p>
+
+  <ul class="failed-list fi">
+    <li class="failed-item"><span class="fx">✕</span>Higher-dose HRT — <strong>mood steadied, fog stayed</strong></li>
+    <li class="failed-item"><span class="fx">✕</span>NMN supplement — felt something for 4 weeks, <strong>nothing after week six</strong></li>
+    <li class="failed-item"><span class="fx">✕</span>Second NMN brand — same story, earlier plateau</li>
+    <li class="failed-item"><span class="fx">✕</span>Nootropic stack from a functional medicine doctor</li>
+    <li class="failed-item"><span class="fx">✕</span>Magnesium, B12, Lion's Mane — various combinations</li>
+    <li class="failed-item"><span class="fx">✕</span>Full elimination diet — gluten, dairy, alcohol</li>
+    <li class="failed-item"><span class="fx">✕</span>Sleep specialist (14-rule sleep hygiene protocol)</li>
+    <li class="failed-item"><span class="fx">✕</span>Brain training app — <strong>six weeks, religiously, nothing</strong></li>
+    <li class="failed-item"><span class="fx">✕</span>Therapy — helped with the anxiety about what was happening, not what was causing it</li>
+    <li class="failed-item"><span class="fx">✕</span>More caffeine. Then less. Both completely useless.</li>
+  </ul>
+
+  <!-- H — Supplements + cancellation email -->
+  <div class="img-breakout fi">
+    <img data-img="H" src="H.png" alt="Eight months of supplements lined up — subscription cancellation confirmed">
+    <p class="img-caption-below">Eight months. Hundreds of dollars. Subscription cancellations, one after another.</p>
+  </div>
+
+  <p class="p fi">Some of these things helped around the edges. But none of them touched the thing I couldn't name. The brain fog was still there. The word retrieval was still unreliable. I was still not <em>me.</em></p>
+
+</div><!-- /article-body -->
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- DISCOVERY — DARK SECTION                   -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="dark-section fi">
+  <div class="dark-inner">
+
+    <div class="section-break" style="border-color:rgba(255,255,255,0.08);">
+      <span class="sb-rule" style="background:rgba(255,255,255,0.08);"></span>
+      <span class="sb-label" style="color:var(--mauve);opacity:.7;">The 2 AM Discovery</span>
+      <span class="sb-rule" style="background:rgba(255,255,255,0.08);"></span>
+    </div>
+
+    <h2 class="sec-h2 sec-h2-white fi">Then I found something<br><em>I wasn't looking for.</em></h2>
+
+    <p class="p-white fi">It was a 2 AM research spiral — its own symptom, as I would later understand. I'd been searching "why does NMN stop working after a few weeks" because I was frustrated that the NMN I'd been taking had done something initially and then simply stopped. I found a thread mentioning an enzyme called <strong>CD38.</strong></p>
+
+    <p class="p-white fi">I had never heard of it. I clicked. I read for the next three hours.</p>
+
+    <p class="p-white fi">Here's what I found — explained the way I wish someone had explained it to me:</p>
+
+    <!-- I — Dimmer switch explainer -->
+    <div class="img-dark-card-wrap fi">
+      <img data-img="I" src="I.png" alt="The Dimmer Switch: Estrogen kept CD38 on a leash. Perimenopause cuts the leash." class="img-dark-card">
+    </div>
+
+    <div class="sci-box-dark fi">
+      <div class="sci-box-label">◈ The Biological Mechanism</div>
+      <p class="sci-box-body">Your brain runs on a molecule called NAD+. For three decades, your estrogen kept an enzyme called CD38 on a leash — suppressing its activity and protecting your NAD+ levels. <strong>Perimenopause cuts that leash.</strong> CD38 is released, accelerates, and begins consuming NAD+ faster than your body can replenish it. The fog. The lost words. The 3 AM wake. The 2 PM wall. All of them are symptoms of a brain running on less fuel than it needs — and no standard blood panel measures it. That is why the labs came back normal.</p>
+    </div>
+
+    <p class="p-white fi">This is not stress. This is not aging in some vague sense. This is a specific, named, peer-reviewed biological mechanism with citations in <em style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.05em;">Cell Metabolism</em> and <em style="font-style:italic;font-family:'Cormorant Garamond',serif;font-size:1.05em;">Nature Aging.</em> And the reason nobody told me about it is simple: <strong>no standard blood panel measures it.</strong></p>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- WHY NMN FAILED                             -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="article-body fi">
+
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">Why The NMN Failed</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <h2 class="sec-h2 fi">This is the part that<br><em>made me genuinely angry.</em></h2>
+
+  <p class="p fi">Once I understood the mechanism, I went back and looked at the NMN I had been taking. And I finally understood why it had worked for four weeks and then stopped.</p>
+
+  <p class="p fi">NMN replenishes NAD+. It fills the bucket. That's what it does and that's all it does. But <strong>CD38 doesn't slow down because you added more NMN.</strong> CD38 is still running. Still draining. You pour NAD+ precursor in from the top. CD38 drains it out from the bottom. You feel something for the first month because you've temporarily outpaced the drain. By week six, the enzyme has caught up.</p>
+
+  <div class="callout fi">
+    <p><strong>Filling a bucket with a hole in the bottom is not a solution. It's just a slower version of empty.</strong></p>
+  </div>
+
+  <!-- J — Bucket diagram -->
+  <div class="img-card-wrap fi">
+    <img data-img="J" src="J.png" alt="NMN fills the bucket from the top while CD38 drains it from the bottom" class="img-card">
+  </div>
+
+  <p class="p fi">What I actually needed was three things working together: something to refill the NAD+, something to <em>slow the enzyme consuming it</em>, and something to cover the metabolic cost of the conversion process — because that conversion itself depletes another resource, and when that runs down, the fog gets heavier, not lighter.</p>
+
+  <p class="p fi">Not one product I had tried addressed all three. Most only addressed one. Some didn't even contain what they said they did.</p>
+
+  <!-- K — 64% stat card -->
+  <div class="img-breakout fi">
+    <img data-img="K" src="K.png" alt="64% of NMN brands tested contained less than 1% of their label claim — GeroScience 2024">
+  </div>
+
+  <p class="p fi">So if you gave NMN eight weeks and felt nothing: <strong>you were not failing. The bottle was.</strong> And even a genuine, pure bottle of NMN alone was never going to fix this. Not without the piece that plugs the hole.</p>
+
+  <!-- WHAT I FOUND -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">What I Found</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <h2 class="sec-h2 fi">I spent three weeks looking.<br><em>Almost nothing addressed all three layers.</em></h2>
+
+  <p class="p fi">The category is flooded with single-ingredient NMN products. I found one brand that included a CD38 inhibitor — but at a dose too low to be meaningful, with nothing to address the methylation cost. Two layers addressed weakly. The third ignored.</p>
+
+  <p class="p fi">Then I found a protocol built around all three simultaneously. The thing that stopped me wasn't the packaging. It was a sentence on the page:</p>
+
+  <div class="pull-quote fi">
+    <p>"No standard blood panel measures this. That is why the labs came back normal."</p>
+  </div>
+
+  <p class="p fi">Two doctors. Two clean blood panels. And nobody had known to look for the thing that was actually wrong. This brand had. They cited the same papers I had spent weeks reading. They weren't asking me to trust them — <strong>they were telling me to verify everything myself.</strong></p>
+
+  <p class="p fi">I ordered that night.</p>
+
+  <!-- WHAT HAPPENED -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">What Happened</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <h2 class="sec-h2 fi"><em>My results were not dramatic.</em><br>But they were real.</h2>
+
+  <p class="p fi">And in some ways, real is more meaningful than dramatic.</p>
+
+  <div class="result-row fi">
+    <div class="result-tag">First thing I noticed</div>
+    <p class="result-heading">The sleep moved first.</p>
+    <p class="p">By the third night, I woke up at my usual 3 AM, started to spiral — and <strong>fell back asleep.</strong> Just like that. As if the thing that had been keeping me wired had simply been turned down. I woke up at 6:47 feeling something I hadn't felt in over a year. <em>Rested.</em></p>
+  </div>
+
+  <!-- L — Sleeping through at 6:54 -->
+  <div class="img-card-wrap fi">
+    <img data-img="L" src="L.png" alt="Finally sleeping through the night — clock reads 6:54" class="img-card-portrait">
+    <p class="img-note">6:54. Not 3 AM. Not 4:30. <em>Morning.</em></p>
+  </div>
+
+  <div class="result-row fi">
+    <div class="result-tag">Week two</div>
+    <p class="result-heading">The afternoon wall softened.</p>
+    <p class="p">Around Day 11, I reached 3 PM with my brain still running. I checked my calendar to see if I had accidentally skipped a meeting — that was the only explanation I had. I hadn't. I was just <strong>still there. Still functional.</strong> Still thinking.</p>
+  </div>
+
+  <div class="result-row fi">
+    <div class="result-tag">Around Day 30</div>
+    <p class="result-heading">Someone noticed before I did.</p>
+    <p class="p">My executive assistant — who has worked with me for four years and knew something had been off — stopped me after a client presentation and said: <em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--plum);font-size:1.05em;">"You were really on today."</em></p>
+    <p class="p">I had not told her what I was doing. She just noticed.</p>
+  </div>
+
+  <!-- M — Colleague conversation -->
+  <div class="img-breakout fi">
+    <img data-img="M" src="M.png" alt="The moment a colleague noticed she was back — before she did">
+  </div>
+
+  <p class="p fi">The cheat sheet notebook is still in my desk drawer. <strong>I haven't opened it in six weeks.</strong></p>
+
+  <div class="pull-quote fi">
+    <p>That is what getting yourself back feels like.<br>Not fireworks. Just a colleague saying,<br>quietly, that you seemed like yourself.</p>
+  </div>
+
+  <!-- OTHERS SAY THE SAME -->
+  <div class="section-break fi">
+    <span class="sb-rule"></span>
+    <span class="sb-label">Others Say the Same Thing</span>
+    <span class="sb-rule"></span>
+  </div>
+
+  <p class="p fi">After I started talking about this — carefully, in the language of "I found some research you might find interesting" — I started hearing versions of my own story everywhere. The woman who'd started keeping notes on her phone before every meeting "just to have a backup." The colleague who told me, over dinner, that she'd been too afraid to get tested for dementia.</p>
+
+  <!-- N — Christine testimonial card -->
+  <div class="img-breakout fi">
+    <img data-img="N" src="N.png" alt="Christine H., 46, Denver CO — Verified Buyer testimonial card">
+  </div>
+
+</div><!-- /article-body -->
+
+<!-- ═══════════════════════════════════════════ -->
+<!-- CTA                                         -->
+<!-- ═══════════════════════════════════════════ -->
+<div class="cta-section">
+  <div class="cta-inner fi">
+    <span class="cta-label">If This Sounds Like Your Story</span>
+    <h2 class="cta-h">You weren't trying to be 25 again.<br><em>You were trying to feel like yourself.</em></h2>
+    <p class="cta-body">The fog has a biological name. The enzyme has peer-reviewed papers. The protocol I found addresses all three layers of what's actually happening — and every bottle has a scannable certificate you can verify before you spend a dollar.</p>
+    <p class="cta-body">I'm not going to walk you through the details here — the people who built it have done that far better than I could. The research is linked. The science is explained. The protocol is laid out clearly. The only question is whether it works on <em style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1em;">you.</em></p>
+    <a href="https://emberprotokol.com" class="cta-btn">Read the science and see the protocol →</a>
+    <p class="cta-sub">Peer-reviewed research · Scannable lot certificate · The complete protocol</p>
+    <hr class="cta-divider">
+    <p class="cta-closing">You were not losing your mind.<br>You were losing NAD+.<br>There's a difference — and it is a fixable one.</p>
+    <div class="cta-wordmark">Ember.</div>
+  </div>
+</div>
+
+<!-- DISCLAIMER -->
+<div style="background:var(--ivory);padding:8px 0 0;">
+  <div class="disclaimer">
+    <p>*This is a sponsored story. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results vary. Testimonials are from verified buyers and do not represent or guarantee that anyone will achieve the same results.</p>
+    <p>Lauren is a composite spokesperson based on documented customer experiences. This advertorial will be updated with a verified real customer story prior to going live. The testimonial from Christine H. is from a verified buyer of the protocol referenced in this article.</p>
+    <p>This article references research from Camacho-Pereira et al. (Cell Metabolism, 2016), Yang et al. (Nature Aging, 2024), and the GeroScience 2024 NMN purity study. All papers are publicly available and linked at emberprotokol.com. Ember is a dietary supplement. Consult your healthcare provider before starting any supplement.</p>
+  </div>
+</div>
+
+<script>
+/* ── APPLY IMAGE URLS FROM CONFIG ── */
+(function(){
+
+  // 1. Swap any src that has a URL in EMBER_IMAGES
+  document.querySelectorAll('[data-img]').forEach(function(el){
+    var key = el.getAttribute('data-img');
+    if (EMBER_IMAGES[key] && EMBER_IMAGES[key].trim()) {
+      el.src = EMBER_IMAGES[key].trim();
+    }
+  });
+
+  // 2. Portrait circle: show photo, hide emoji placeholder
+  if (EMBER_IMAGES.portrait && EMBER_IMAGES.portrait.trim()) {
+    var photo = document.getElementById('avatar-photo');
+    var emoji = document.getElementById('avatar-emoji');
+    if (photo) { photo.src = EMBER_IMAGES.portrait.trim(); photo.style.display = 'block'; }
+    if (emoji) { emoji.style.display = 'none'; }
+  }
+
+})();
+
+/* ── SCROLL FADE-IN ── */
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('vis'); io.unobserve(e.target); }
+    });
+  },{ threshold:0.06, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('.fi').forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
